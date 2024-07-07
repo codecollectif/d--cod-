@@ -178,6 +178,8 @@
 .page-content {
   padding: $spacing-unit 0;
   flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .page-heading {
@@ -255,8 +257,10 @@
 }
 
 .wrapper {
+  flex: 1;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  align-items: center;
+  grid-template-rows: 1fr auto;
+  align-items: end;
   gap: 4rem;
 }
